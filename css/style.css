@@ -1,0 +1,113 @@
+/*
+narandzasta tamna:#a17964
+narandzasta svetla:9d7560
+/narandzasta: #d65614;
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+ .container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;/*0 15 0 15-gore ,desno,dole,levo*/
+ }
+	
+	
+}
+.mt-5, .my-5 {
+	margin-top:5%;
+}
+
+.mb-5, .my-5 {
+	margin-bottom:5%;
+}
+
+.ml-5, .mx-5 {
+	margin-left:5%
+}
+
+.mr-5, .mx-5 {
+	margin-right:5%;
+}
+
+.header-wrapper {
+	position: relative;
+	background-color: #d65614;
+}
+
+.header {
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo img {
+	width: 150px;
+}
+
+.logo a {
+	display: flex;
+}
+
+.nav-bar {
+	display: flex;
+}
+
+.nav-bar ul {
+	display: flex;
+}
+
+.nav-bar li {
+	list-style: none;
+	position: relative;
+}
+
+.nav-bar li a {
+	text-decoration: none;
+	color: white;/*#ffffff*/
+	font-size: 14px;
+	padding: 8px 18px;
+	border-radius: 3px;
+}
+
+.nav-bar li a:hover {
+	background: color:white;
+	color: black;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
