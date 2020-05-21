@@ -9,45 +9,81 @@ narandzasta svetla:9d7560
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
-	
 }
 
- .container {
+.container {
 	max-width: 1170px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 15px;/*0 15 0 15-gore ,desno,dole,levo*/
- }
-	
-	
+	padding: 0 15px; /*0 15px  0 15px-gore ,desno,dole,levo*/
 }
+ 
+.container-sm {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 15px;
+}
+ 
+.title {
+	font-size:30px;
+	color:#6d6d6d;
+	font-weight: bold;
+	/*Margins*/
+}
+
 .mt-5, .my-5 {
-	margin-top:5%;
+	margin-top: 5%;
 }
 
 .mb-5, .my-5 {
-	margin-bottom:5%;
+	margin-bottom: 5%;
 }
 
 .ml-5, .mx-5 {
-	margin-left:5%
+	margin-left: 5%;
 }
 
 .mr-5, .mx-5 {
-	margin-right:5%;
+	margin-right: 5%;
 }
+
+.mt-2, .my-2 {
+    margin-top: 2%;
+}
+
+.mb-2, .my-2 {
+    margin-bottom: 2%;
+}
+
+.ml-2, .mx-2 {
+    margin-left: 2%;
+}
+
+.mr-2, .mx-2 {
+    margin-right: 2%;
+}
+
+/*end margins*/
+/*header*/
+
 
 .header-wrapper {
 	position: relative;
-	background-color: #d65614;
+/*	background-color: #d65614;*/
+	background: rgb(227,140,95);
+    background: linear-gradient(0deg, rgba(227,140,95,1) 1%, rgba(223,119,64,1) 54%, rgba(195,78,18,1) 100%);
 }
 
 .header {
 	padding: 10px 0;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items:center;
 }
+
+/*logo */
+
 .logo img {
 	width: 150px;
 }
@@ -55,6 +91,8 @@ narandzasta svetla:9d7560
 .logo a {
 	display: flex;
 }
+
+/* end logo*/
 
 .nav-bar {
 	display: flex;
@@ -78,36 +116,277 @@ narandzasta svetla:9d7560
 }
 
 .nav-bar li a:hover {
-	background: color:white;
+	background-color: white;
 	color: black;
 }
+
+/* end header*/
+/* end nav-bar*/	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+/*Main baner*/
+.main-banner {
+	background-image: url('https://beingcovers.com/media/facebook-cover/Blue-Sea-facebook-covers-3257.jpeg');
+	background-size: cover;
+	min-height: 400px;
+	display: flex;	
+	align-items: center;
+}
+
+.banner-text {
+	text-align: center;
+	color: black;
+}
+
+.banner-text h1 {
+	font-size: 36px;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+
+.banner-text p {
+	font-size: 16px;
+}
+
+/*end main banner*/
 	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Boxevi */
 	
+.box-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 25px 0;
+}
+
+.box {
+	width: 33.33%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	padding-right: 20px;
+}
 	
+.box h2 {
+	color: #6d6d6d;
+	font-size: 28px;
+	padding-bottom: 16px;
+}
+	
+.box p {
+	color: gray;
+	font-size: 16px;
+	padding-bottom: 16px;
+}
+	
+.box a {
+	color: #d65614;
+	text-decoration:none;
+}
+
+/* end boxevi */
+
+/* Events */
+		
+/*.box-wrapper.events .box {
+
+}*/	
+		
+.box-wrapper.events img {
+	width: 100%;
+}
+		
+.box-wrapper.events h3,  
+.box-wrapper.blog h3 {
+	margin: 20px 0 10px 0;
+	font-size: 20px;
+	color: #d65614;
+}
+
+.box-wrapper.events span,
+.box-wrapper.blog span {
+	color: #6d6d6d;
+	font-size: 12px;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+
+/*end events*/
+
+/* Blogs */
+		
+.box-wrapper.blog .box {
+	width: 49.99%;
+}
+
+.box-wrapper.blog h3 {
+	margin: 20px 0 10px 0;
+	font-size:20px;
+	color: #d65614;
+}
+		
+.box-wrapper.blog span {
+	color: #6d6d6d;
+	font-size: 12px;
+	margin-bottom: 10px;
+	font-style: italic;
+}
+		
+.blog-btn {
+	text-align: center;
+}
+
+.blog-btn a {
+	min-width: 100px;
+	border: 1px solid #6d6d6d;
+	color: #444444;
+	text-decoration: none;
+	text-transform: capitalize;
+	/*display: inline-flex;*/
+	padding: 15px 40px;
+	border-radius: 5px;
+}
+
+/* End Blogs */
+		
+/* Subscribe */
+.subscribe {
+	background-color: #f8f8f8;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 60px 0;
+	margin: 100px 0 70px 0;
+}
+
+.subscribe-content {
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.subscribe-content h2 {
+	color: #444;
+	font-size: 28px;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+	font-weight: 300;
+}
+
+.subscribe-content form {
+	display: flex;
+}
+
+.subscribe-field {
+	width: 77%;
+	border: 1px solid gray;
+	background-color: #ffffff;
+	height: 40px;
+	padding: 0 10px;
+	font-size: 16px;	
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;		
+}
+
+.subscribe-button {
+	width: 23%;
+	border: 1px solid #6d6d6d;
+	border-left: none;
+	background-size: 16px;
+	padding: 0 10px;
+	height: 40px;
+	background-color: #ffffff;
+	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+	
+.subscribe-button:hover {
+	background-color: #6d6d6d;
+	color: #ffffff;
+}	
+
+/* End Subscribe */
+
+/* Footer */
+
+.footer-wrapper {
+	background: rgb(227,140,95);
+    background: linear-gradient(0deg, rgba(195,78,18,1) 1%, rgba(223,119,64,1) 54%, rgba(227,140,95,1) 100%);
+	padding: 40px 0;	
+}
+
+.footer {
+	text-align: center;
+}
+
+.nav-list {
+	list-style: none;
+}
+
+
+.nav-list li {
+	display: inline-block;
+	padding-right: 10px;
+	position: relative;
+}
+
+.nav-list li:last-child {
+	padding-right: 0;
+}
+
+.nav-list a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.copyright {
+	font-size: 12px;
+	color: #ffffff;
+}
+
+.footer-list-divider {
+	color: #ffffff;
+}
+
+/* end footer */
+		
+/* Login */
+
+/*	
+.flex-center {
+	display: flex;
+	align-items: center;
+	justify-content:center;
+}
+*/
+
+/* Responsive */
+	
+/* Tablet - do 768 pixela */
+@media (max-width: 768px) {           
+	.nav-bar {display: none; }
+	
+	.box {
+		width:100%;
+		padding:0;
+		margin-bottom:20px;
+	}
+	
+	.box-wrapper.blog .box {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+}		
+
+/* Tablet - od 768 pixela */
+@media (min-width: 768px) {   
+}             
+
+/* SmartPhone - do 470px */
+@media (max-width: 470px) {
+    
+}
+

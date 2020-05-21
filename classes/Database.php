@@ -86,7 +86,7 @@
 	}
 		
 	
-	//FIND - metod prima arej u kom je prvi clan
+	//FIND - cdmetod prima arej u kom je prvi clan
 	
 	   public function find($table, $where=[]) {
       if(count($where)===2) {
