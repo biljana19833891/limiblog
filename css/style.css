@@ -354,35 +354,112 @@ narandzasta svetla:9d7560
 		
 /* Login */
 
-/*	
+	
 .flex-center {
 	display: flex;
 	align-items: center;
 	justify-content:center;
 }
-*/
+.login-box {
+	margin-top: 50px;
+	margin-bottom: 100%;
+	border-radius: 34px 34px 34px 34px;
+	-moz-border-radius: 34px 34p 34px 34px;
+	-webkit-border-radius: 34px 34px 34px 34px;
+	
+	-webkit-box-shadow: -4px 6px 14px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: -4px 6px 14px -3px rgba(0,0,0,0.75);
+	box-shadow: -4px 6px 14px -3px rgba(0,0,0,0.75);
+	
+}
+
+.login-form {
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.login-form h2 {
+	margin-top: 10px;
+	font-size: 26px;
+	color: pink;
+}
+
+.login-form p {
+	font-size: 16px;
+	
+}
+
+.form-field {
+	width: 100%;
+	border: 1px solid gray;
+	background-color: white;
+	height: 40px;
+	padding: 25px 10px;
+	font-size: 16px;
+}
+.btn {
+	background:  #ff00ff;
+	border-radius: 11px;
+	padding: 10px 80px;
+	color:  #007bff;
+}
+
 
 /* Responsive */
 	
 /* Tablet - do 768 pixela */
 @media (max-width: 768px) {           
-	.nav-bar {display: none; }
-	
-	.box {
-		width:100%;
-		padding:0;
-		margin-bottom:20px;
+	.nav-bar {display: none;
+		width: 100%;
+		position: absolute;
+		top:100%;
+		left: 0;
+		background-color:orange;
+		padding:60px 0;
+		z-index: 999;
+	}
+	.nav-bar ul {
+		flex-direction: column;
+		align-items: center;
 	}
 	
+	.burgar {
+		display: block;
+		
+	}
+	
+	.nav-bar li {
+		margin-bottom: 10px;
+	}
+	
+	.main-banner {
+		max-height:500px;
+	}
+
 	.box-wrapper.blog .box {
 		width: 100%;
 		padding: 0;
 		margin-bottom: 20px;
 	}
+	.box-wrapper.blog.box {
+		width:100%
+
+	
+	}
+	
 }		
 
 /* Tablet - od 768 pixela */
-@media (min-width: 768px) {   
+@media (min-width: 768px) { 
+    .nav-bar {
+		display: flex !important;
+	}	
+	.naav-bar li a:hover {
+		background-color: white;
+		color:black;
+	}
 }             
 
 /* SmartPhone - do 470px */
